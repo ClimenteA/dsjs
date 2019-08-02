@@ -15,13 +15,10 @@ function dfFromCSV(csvData) {
 
   let cols = df.listColumns();
 
-  console.log(cols);
+  console.log("Columns:", cols);
 
+  console.log("\nDataframe:");
   df.show();
-
-  let newdf = df.select('Col 1 ');
-
-  console.log(newdf);
 
 
 }
@@ -38,7 +35,7 @@ function upload(evt) {
 
   var data = Papa.parse(csvData, {header : true});
 
-  console.log(data);
+  console.log("Parsed CSV file: ", data);
 
   showDataOnPage(data['data']);
   dfFromCSV(data['data']);
