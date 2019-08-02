@@ -20,6 +20,20 @@ function dfFromCSV(csvData) {
   console.log("\nDataframe:");
   df.show();
 
+  console.log("\nCollection format: ");
+  let collection_format = df.toCollection();
+  console.log(collection_format);
+
+  console.log("\nArray format: ");
+  let array_format = df.toArray();
+  console.log(array_format);
+
+
+  console.log("\nDict format: ");
+  let dict_format = df.toDict();
+  console.log(dict_format);
+
+
 
 }
 
